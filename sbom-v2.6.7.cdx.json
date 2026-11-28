@@ -1,0 +1,554 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:3b8d0e62-9f4a-4c1d-9e77-20261126a267",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-11-26T16:30:00Z",
+    "tools": [
+      {
+        "vendor": "AIMLDS",
+        "name": "house manifest generator (from DEPENDENCIES.md census)",
+        "version": "1.0"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "bom-ref": "pkg:generic/airgap-keyboard@2.6.7",
+      "name": "AirGap Keyboard",
+      "version": "2.6.7",
+      "properties": [
+        {
+          "name": "applicationId",
+          "value": "org.aimlds.airgap"
+        },
+        {
+          "name": "versionCode",
+          "value": "44"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.android.billingclient/billing@8.0.0",
+      "group": "com.android.billingclient",
+      "name": "billing",
+      "version": "8.0.0",
+      "purl": "pkg:maven/com.android.billingclient/billing@8.0.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "05c1cf69ca610aea405aa49c6dec84eeb09b4a2434221ff92f0dc566a72d7b16"
+        }
+      ],
+      "properties": [
+        {
+          "name": "source",
+          "value": "Google Maven"
+        },
+        {
+          "name": "dexed-input",
+          "value": "third-party/jars/billing-8.0.0-classes.jar"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.android.billingclient/billing-ktx@8.0.0",
+      "group": "com.android.billingclient",
+      "name": "billing-ktx",
+      "version": "8.0.0",
+      "purl": "pkg:maven/com.android.billingclient/billing-ktx@8.0.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "913b04406a819372cfa10c054690dc7b2c05371daf6bb404f9353b87bd5657b4"
+        }
+      ],
+      "properties": [
+        {
+          "name": "source",
+          "value": "Google Maven"
+        },
+        {
+          "name": "dexed-input",
+          "value": "third-party/jars/billing-ktx-8.0.0-classes.jar"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.google.android.gms/play-services-base@18.5.0",
+      "group": "com.google.android.gms",
+      "name": "play-services-base",
+      "version": "18.5.0",
+      "purl": "pkg:maven/com.google.android.gms/play-services-base@18.5.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "c5e550b08917ca9161292a1ffe0d9b4a2189a25703770588a053bdd291d0070c"
+        }
+      ],
+      "properties": [
+        {
+          "name": "source",
+          "value": "Google Maven"
+        },
+        {
+          "name": "dexed-input",
+          "value": "third-party/jars/play-services-base-18.5.0-classes.jar"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.google.android.gms/play-services-basement@18.4.0",
+      "group": "com.google.android.gms",
+      "name": "play-services-basement",
+      "version": "18.4.0",
+      "purl": "pkg:maven/com.google.android.gms/play-services-basement@18.4.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "4837042af38d43c3bef38082767f3641b6306ccf7801a43c0ce5a9f24c490c9b"
+        }
+      ],
+      "properties": [
+        {
+          "name": "source",
+          "value": "Google Maven"
+        },
+        {
+          "name": "dexed-input",
+          "value": "third-party/jars/play-services-basement-18.4.0-classes.jar"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.google.android.gms/play-services-tasks@18.2.0",
+      "group": "com.google.android.gms",
+      "name": "play-services-tasks",
+      "version": "18.2.0",
+      "purl": "pkg:maven/com.google.android.gms/play-services-tasks@18.2.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "00d1de46d6f573b05516e4bbff89e6e56f4cae938fb22e586512c316e68dc303"
+        }
+      ],
+      "properties": [
+        {
+          "name": "source",
+          "value": "Google Maven"
+        },
+        {
+          "name": "dexed-input",
+          "value": "third-party/jars/play-services-tasks-18.2.0-classes.jar"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.google.android.datatransport/transport-api@3.0.0",
+      "group": "com.google.android.datatransport",
+      "name": "transport-api",
+      "version": "3.0.0",
+      "purl": "pkg:maven/com.google.android.datatransport/transport-api@3.0.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "f4c3c4136b405671ac98e38356f07bb7501f6db00a20f34d85cb3094513f98ac"
+        }
+      ],
+      "properties": [
+        {
+          "name": "source",
+          "value": "Google Maven"
+        },
+        {
+          "name": "dexed-input",
+          "value": "third-party/jars/transport-api-3.0.0-classes.jar"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.google.android.datatransport/transport-runtime@3.1.8",
+      "group": "com.google.android.datatransport",
+      "name": "transport-runtime",
+      "version": "3.1.8",
+      "purl": "pkg:maven/com.google.android.datatransport/transport-runtime@3.1.8",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "2d5bc39106ad24ceeadf4a41451b6113fcc5449ed6336a2fffc832b6411b5069"
+        }
+      ],
+      "properties": [
+        {
+          "name": "source",
+          "value": "Google Maven"
+        },
+        {
+          "name": "dexed-input",
+          "value": "third-party/jars/transport-runtime-3.1.8-classes.jar"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.google.android.datatransport/transport-backend-cct@3.1.8",
+      "group": "com.google.android.datatransport",
+      "name": "transport-backend-cct",
+      "version": "3.1.8",
+      "purl": "pkg:maven/com.google.android.datatransport/transport-backend-cct@3.1.8",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "881428792997249f3c57c9f8c295595b886e72a984809a9c4988bbd329ea3ec4"
+        }
+      ],
+      "properties": [
+        {
+          "name": "source",
+          "value": "Google Maven"
+        },
+        {
+          "name": "dexed-input",
+          "value": "third-party/jars/transport-backend-cct-3.1.8-classes.jar"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.google.guava/guava@32.1.2-android",
+      "group": "com.google.guava",
+      "name": "guava",
+      "version": "32.1.2-android",
+      "purl": "pkg:maven/com.google.guava/guava@32.1.2-android",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "78ef3d807fabda1817d1559a4d9ce0b6b197fa018dd63881247103c5536585ef"
+        }
+      ],
+      "properties": [
+        {
+          "name": "source",
+          "value": "Maven Central"
+        },
+        {
+          "name": "dexed-input",
+          "value": "third-party/jars/guava-32.1.2-android.jar"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.google.guava/failureaccess@1.0.2",
+      "group": "com.google.guava",
+      "name": "failureaccess",
+      "version": "1.0.2",
+      "purl": "pkg:maven/com.google.guava/failureaccess@1.0.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "8a8f81cf9b359e3f6dfa691a1e776985c061ef2f223c9b2c80753e1b458e8064"
+        }
+      ],
+      "properties": [
+        {
+          "name": "source",
+          "value": "Google Maven"
+        },
+        {
+          "name": "dexed-input",
+          "value": "third-party/jars/failureaccess-1.0.2.jar"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.google.guava/listenablefuture@9999.0-empty",
+      "group": "com.google.guava",
+      "name": "listenablefuture",
+      "version": "9999.0-empty",
+      "purl": "pkg:maven/com.google.guava/listenablefuture@9999.0-empty",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "b372a037d4230aa57fbeffdef30fd6123f9c0c2db85d0aced00c91b974f33f99"
+        }
+      ],
+      "properties": [
+        {
+          "name": "source",
+          "value": "Google Maven"
+        },
+        {
+          "name": "dexed-input",
+          "value": "third-party/jars/listenablefuture-9999.0.jar"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/androidx.annotation/annotation@1.9.1",
+      "group": "androidx.annotation",
+      "name": "annotation",
+      "version": "1.9.1",
+      "purl": "pkg:maven/androidx.annotation/annotation@1.9.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "38322afa7345c37e29c65ec8852178ae1c26e23096a0634d07a4a3893931f58c"
+        }
+      ],
+      "properties": [
+        {
+          "name": "source",
+          "value": "Google Maven"
+        },
+        {
+          "name": "dexed-input",
+          "value": "third-party/jars/androidx-annotation-1.9.1.jar"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.google.errorprone/error_prone_annotations@2.27.0",
+      "group": "com.google.errorprone",
+      "name": "error_prone_annotations",
+      "version": "2.27.0",
+      "purl": "pkg:maven/com.google.errorprone/error_prone_annotations@2.27.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "24c923372c58e35d0b9f16a028929bb9aedc77521867c274f2bd0735df5ba1f5"
+        }
+      ],
+      "properties": [
+        {
+          "name": "source",
+          "value": "Google Maven"
+        },
+        {
+          "name": "dexed-input",
+          "value": "third-party/jars/error_prone_annotations-2.27.0.jar"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/org.jetbrains/annotations@23.0.0",
+      "group": "org.jetbrains",
+      "name": "annotations",
+      "version": "23.0.0",
+      "purl": "pkg:maven/org.jetbrains/annotations@23.0.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "7b0f19724082cbfcbc66e5abea2b9bc92cf08a1ea11e191933ed43801eb3cd05"
+        }
+      ],
+      "properties": [
+        {
+          "name": "source",
+          "value": "Google Maven"
+        },
+        {
+          "name": "dexed-input",
+          "value": "third-party/jars/jetbrains-annotations-23.0.0.jar"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.google.code.findbugs/jsr305@3.0.2",
+      "group": "com.google.code.findbugs",
+      "name": "jsr305",
+      "version": "3.0.2",
+      "purl": "pkg:maven/com.google.code.findbugs/jsr305@3.0.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "766ad2a0783f2687962c8ad74ceecc38a28b9f72a2d085ee438b7813e928d0c7"
+        }
+      ],
+      "properties": [
+        {
+          "name": "source",
+          "value": "Google Maven"
+        },
+        {
+          "name": "dexed-input",
+          "value": "third-party/jars/jsr305-3.0.2.jar"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:maven/com.google.j2objc/j2objc-annotations@2.8",
+      "group": "com.google.j2objc",
+      "name": "j2objc-annotations",
+      "version": "2.8",
+      "purl": "pkg:maven/com.google.j2objc/j2objc-annotations@2.8",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "f02a95fa1a5e95edb3ed859fd0fb7df709d121a35290eff8b74dce2ab7f4d6ed"
+        }
+      ],
+      "properties": [
+        {
+          "name": "source",
+          "value": "Google Maven"
+        },
+        {
+          "name": "dexed-input",
+          "value": "third-party/jars/j2objc-annotations-2.8.jar"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:github/ggerganov/whisper.cpp@v1.7.6",
+      "name": "whisper.cpp",
+      "version": "1.7.6",
+      "purl": "pkg:github/ggerganov/whisper.cpp@v1.7.6",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "source",
+          "value": "github.com/ggerganov/whisper.cpp"
+        },
+        {
+          "name": "how-it-enters",
+          "value": "Source tree in the build toolchain (WHISPER_SRC); compiled to libwhisper.so. Not carried in this repo."
+        }
+      ]
+    }
+  ]
+}

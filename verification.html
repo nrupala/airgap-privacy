@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Verification — AirGap Keyboard</title>
+<style>
+  body { font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+         max-width: 44rem; margin: 2.5rem auto; padding: 0 1.25rem; line-height: 1.6; color: #1a1a1a; }
+  h1 { font-size: 1.7rem; margin-bottom: 0.25rem; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; }
+  .meta { color: #555; }
+  code { font-size: 0.82rem; word-break: break-all; }
+  li { margin-bottom: 0.6rem; }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #ddd; color: #555; font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<h1>Verification — AirGap Keyboard</h1>
+<p class="meta">The evidence behind the claims, published so you do not have to take our word for any of it.<br>
+Published by 2351485 ALBERTA INC. (AIMLDS), Calgary, Alberta, Canada.<br>
+Security contact: <a href="mailto:info@aimlds.org">info@aimlds.org</a> · <a href="security.txt">security.txt</a></p>
+
+<h2>The product</h2>
+<p>AirGap Keyboard (package <code>org.aimlds.airgap</code>) is an
+<strong>Android-only</strong> keyboard. “Air-gapped” means two things, and both
+hold: your data <strong>never leaves your phone</strong> — the app has no INTERNET
+permission, so Android blocks every connection it could try to open — and
+<strong>no other app on your phone can read what the keyboard keeps</strong>: its
+learned words, clipboard and scheduled messages sit in the app's own private
+storage, sealed as AES-256-GCM ciphertext with the key held in your phone's
+Android Keystore, and the app opens no door into that storage. Android backup
+is off for this app.</p>
+
+<h2>Current release: 2.6.7 (versionCode 44)</h2>
+<p>Published on Google Play on 2026-11-26. The release artifacts, with the
+SHA-256 fingerprint of each:</p>
+<ul>
+<li><strong>AirGapKeyboard-v2.6.7.apk</strong> — the directly distributed APK, signed
+with the house release key (85,697,437 bytes)<br>
+<code>859763f46cc0078ff6d22933ec6949375e05aa60d4d697f24386eae297b9d031</code></li>
+<li><strong>AirGapKeyboard-v2.6.7-universal.apk</strong> — universal APK from the same
+bundle (85,635,815 bytes)<br>
+<code>b2ac883ab5ebeb021ee985443d8dfeab805d062891ae041afa0998648eb1e047</code></li>
+<li><strong>AirGapKeyboard-v2.6.7.aab</strong> — the app bundle uploaded to Google Play
+(76,329,167 bytes)<br>
+<code>29c0fc037e23e4718f01935d4f6912df8d6202207ce4e5b701fbf3080382dad5</code></li>
+<li><strong>House signing certificate</strong> (SHA-256)<br>
+<code>78:A2:FB:0F:F7:73:77:F2:0B:5D:1E:10:F6:57:7E:2B:6E:E7:F9:B2:40:B5:E6:B8:52:9E:F0:6E:F2:05:9E:0C</code><br>
+Copies installed from Google Play are signed by Google's app-signing key over
+the same bundle. A directly distributed APK is trustworthy only if its signing
+certificate matches the house fingerprint above.</li>
+</ul>
+
+<h2>Test evidence for this release</h2>
+<ul>
+<li><strong>Core test battery: 5,214 checks, all passing</strong> — the keyboard's
+core logic, including the auto-send verdict logic and the dictionary
+preservation rules, exercised on the exact tree this release was built from.</li>
+<li><strong>Emoji data battery: 17,063 checks, all passing</strong> — every emoji
+sequence the keyboard ships, verified against its source data.</li>
+<li><strong>Artifact security probes: 8 of 8 passing</strong> — run against the built
+APK itself: permission surface is exactly Microphone + Google Play Billing
+with no INTERNET permission; internal components are not exposed to other
+apps; backup is off; the build is not debuggable; no key material inside the
+package.</li>
+<li><strong>Independent gate: PASS, no findings.</strong> Under this house's rules the
+person who builds a release never grades it. A separate tester checked out
+the release tree fresh, re-ran the full battery, verified the artifact
+fingerprints above, and swept the auto-send verdict logic across its full
+96-case truth table — it reports SENT in exactly one case: the one where the
+send is positively confirmed.</li>
+</ul>
+
+<h2>Software bill of materials</h2>
+<p>The release's SBOM (CycloneDX 1.5, 17 components) is published here:
+<a href="sbom-v2.6.7.cdx.json">sbom-v2.6.7.cdx.json</a>. One known
+vulnerability is on record, stated plainly: Guava 32.1.2-android, carried
+inside the Google Play Billing library, is subject to CVE-2026-102554
+(GHSA-xxph-c9ww-hj94), a deserialization memory-exhaustion flaw. The
+keyboard's own code never uses Guava and contains no Java deserialization
+path, so the flaw is unreachable in this app; it is recorded as an accepted
+risk in the project's bench report, and that acceptance lapses the moment
+the billing library changes.</p>
+
+<h2>Scope of this page</h2>
+<p>Every number above belongs to version 2.6.7 (44) and the artifacts named
+here. A later version gets its own updated page before it is called
+verified. What no page can prove is your phone itself — the app's own Proof
+screen (Settings → About → Proof) runs the permission, network-refusal and
+encryption checks live on your device, with your phone's own key.</p>
+
+<footer>AirGap Keyboard is a product of 2351485 ALBERTA INC. (AIMLDS), Calgary, Alberta, Canada. · <a href="index.html">Privacy policy</a></footer>
+</body>
+</html>

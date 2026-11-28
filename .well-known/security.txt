@@ -1,0 +1,5 @@
+Contact: mailto:info@aimlds.org
+Expires: 2027-11-28T00:00:00.000Z
+Preferred-Languages: en
+Policy: https://nrupala.github.io/airgap-privacy/
+Canonical: https://nrupala.github.io/airgap-privacy/.well-known/security.txt
